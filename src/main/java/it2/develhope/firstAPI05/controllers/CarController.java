@@ -10,6 +10,7 @@ import javax.validation.Valid;
 @RestController
 public class CarController {
 
+    //GET request returns a new Car as response
     @GetMapping(value = "/cars")
     public CarDTO getCar(CarDTO carDTO){
         return new CarDTO("1234-6548","Jeep Renegade",34.20);
